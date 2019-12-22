@@ -1,5 +1,9 @@
 .App {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: 10px;
+  overflow-y: hidden;
 }
 
 .App-logo {
@@ -26,6 +30,18 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.left-col {
+  width: 60%;
+  overflow-y: auto;
+  margin-left: 25%;
+  height: 95vh;
+}
+
+.right-col {
+  width: 40%;
+  margin-left: 10%;
 }
 
 @keyframes App-logo-spin {
