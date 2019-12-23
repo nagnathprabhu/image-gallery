@@ -20,9 +20,9 @@ class App extends Component {
                     <ImageList images={images} width="40%" height="10%" setImage={this.setImage} />
                 </div>
                 <div className="right-col">
-                    <h1>{chosenImage && images[chosenImage]['author']}</h1>
+                    <h1>{images[chosenImage] && images[chosenImage]['author']}</h1>
                     {images[chosenImage] && <img src={images[chosenImage]['download_url']} width={"80%"} height={"50%"} />}
-                    {chosenImage && <div><button onClick={this.clearImage}>Clear</button> </div> || ''}
+                    {images[chosenImage] && <div><button onClick={this.clearImage}>Clear</button> </div> || ''}
                 </div>
             </div>
         );
